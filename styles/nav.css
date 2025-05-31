@@ -1,0 +1,86 @@
+body {
+  background-color: var(--charcoal);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    rgb(255, 165, 79),
+    rgb(210, 120, 75),
+    rgb(160, 80, 40)
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6.5rem;
+  align-items: center;
+}
+
+div.nav-wrapper {
+  display: flex;
+  width: 85vw;
+}
+
+a.obt-logo img {
+  height: 6rem;
+  width: 6rem;
+}
+
+div.nav-links {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+div.nav-links a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+div.dd-links {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+div.about-us::after {
+  content: "";
+  position: absolute;
+  background-color: var(--charcoal);
+  height: 10rem;
+  width: 7rem;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.dd-links:hover,
+div.nav-links a:hover {
+  color: var(--gray);
+  transform: translateY(0.4rem);
+}
+
+svg.more-links path {
+  transition: stroke 0.3s ease;
+}
+
+div.dd-links:hover svg.more-links path {
+  stroke: var(--gray);
+}
+
+div.nav-links svg.more-links {
+  height: 1.5rem;
+  width: 1.5rem;
+}
