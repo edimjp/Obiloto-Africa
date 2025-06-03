@@ -1,7 +1,9 @@
 :root {
-  --orange: rgb(240, 124, 62);
+  --orange: #ffa500;
   --black: rgb(26, 32, 44);
   --gray: rgb(200, 200, 200);
-  --charcoal: rgb(57, 55, 66);
+  --white: #fff;
+  --lightGray: #ecf0f1;
+  --darkgreen: #1e8449;
   --font-euclid: "__euclid_86150b", "__euclid_Fallback_86150b";
 }

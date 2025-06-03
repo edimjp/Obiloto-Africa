@@ -1,0 +1,68 @@
+nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6.5rem;
+  align-items: center;
+  transition: all ease-in 0.5s;
+}
+
+nav.nav-himself {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: rgba(235, 156, 9, 0.692);
+}
+
+div.nav-wrapper {
+  display: flex;
+  width: 80vw;
+}
+
+a.obt-logo img {
+  height: 15rem;
+}
+
+div.nav-links {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+div.nav-links a {
+  text-decoration: none;
+  color: var(--orange);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+div.nav-links a.gray {
+  color: var(--gray);
+}
+
+div.nav-links a:hover {
+  color: var(--black);
+  transform: translateY(0.4rem);
+}
+
+div.nav-links a.home {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+svg.more-links path {
+  transition: stroke 0.3s ease;
+}
+
+div.dd-links:hover svg.more-links path {
+  stroke: var(--gray);
+}
+
+div.nav-links svg.more-links {
+  height: 1.5rem;
+  width: 1.5rem;
+}

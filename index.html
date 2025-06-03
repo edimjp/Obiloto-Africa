@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obiloto Africa</title>
     <link rel="icon" href="./Images/favicon.png" />
-    <link rel="stylesheet" href="./styles/color.css" />
-    <link rel="stylesheet" href="./styles/nav.css" />
-    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/General/color.css" />
+    <link rel="stylesheet" href="./styles/General/nav.css" />
+    <link rel="stylesheet" href="./styles/General/general.css" />
+    <link rel="stylesheet" href="./styles/Home/indexMain.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -16,148 +17,82 @@
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
+
+    <script src="./navScroll.js" defer></script>
   </head>
   <body>
     <nav>
       <div class="nav-wrapper">
         <a href="./index.html" class="obt-logo">
-          <img src="./Images/favicon.png" alt="" />
+          <img
+            src="./Images/WhatsApp_Image_2025-05-28_at_12.30.44-removebg-preview.png"
+            alt="Obiloto-Africa-logo"
+          />
         </a>
 
         <div class="nav-links">
-          <a href="./index.html">Home</a>
-
-          <div class="dd-links about-us">
-            <span> About Us </span>
-            <svg
-              class="more-links"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M19 9L14 14.1599C13.7429 14.4323 13.4329 14.6493 13.089 14.7976C12.7451 14.9459 12.3745 15.0225 12 15.0225C11.6255 15.0225 11.2549 14.9459 10.9109 14.7976C10.567 14.6493 10.2571 14.4323 10 14.1599L5 9"
-                  stroke="var(--black)"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
-            </svg>
-          </div>
-
-          <div class="dd-links">
-            <span> EdTech Programmes and Tools </span>
-            <svg
-              class="more-links"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M19 9L14 14.1599C13.7429 14.4323 13.4329 14.6493 13.089 14.7976C12.7451 14.9459 12.3745 15.0225 12 15.0225C11.6255 15.0225 11.2549 14.9459 10.9109 14.7976C10.567 14.6493 10.2571 14.4323 10 14.1599L5 9"
-                  stroke="var(--black)"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
-            </svg>
-          </div>
-
-          <div class="dd-links">
-            <span>Initiatives </span>
-            <svg
-              class="more-links"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M19 9L14 14.1599C13.7429 14.4323 13.4329 14.6493 13.089 14.7976C12.7451 14.9459 12.3745 15.0225 12 15.0225C11.6255 15.0225 11.2549 14.9459 10.9109 14.7976C10.567 14.6493 10.2571 14.4323 10 14.1599L5 9"
-                  stroke="var(--black)"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
-            </svg>
-          </div>
-
-          <div class="dd-links">
-            <span> News & Update </span>
-            <svg
-              class="more-links"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M19 9L14 14.1599C13.7429 14.4323 13.4329 14.6493 13.089 14.7976C12.7451 14.9459 12.3745 15.0225 12 15.0225C11.6255 15.0225 11.2549 14.9459 10.9109 14.7976C10.567 14.6493 10.2571 14.4323 10 14.1599L5 9"
-                  stroke="var(--black)"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
-            </svg>
-          </div>
-
-          <div class="dd-links">
-            <span> Resources </span>
-            <svg
-              class="more-links"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M19 9L14 14.1599C13.7429 14.4323 13.4329 14.6493 13.089 14.7976C12.7451 14.9459 12.3745 15.0225 12 15.0225C11.6255 15.0225 11.2549 14.9459 10.9109 14.7976C10.567 14.6493 10.2571 14.4323 10 14.1599L5 9"
-                  stroke="var(--black)"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
-            </svg>
-          </div>
+          <a class="home" href="./index.html">Home</a>
+          <a href="">Meet Us</a>
+          <a href="">Programmes</a>
+          <a href="">Get Involved</a>
+          <a href="">Sponsor a Child</a>
+          <a href="">Contact</a>
         </div>
       </div>
     </nav>
+
+    <main>
+      <div class="childrenPic">
+        <div class="hero-text">
+          <h1>
+            “By investing in education, we are investing in the future of
+            Africa.”
+          </h1>
+          <p>
+            Education transforms lives — it reduces poverty and inequality,
+            boosts economic growth, and increases life chances. No country can
+            develop sustainably without investing in education.
+          </p>
+          <p class="unesco">— UNESCO Education Strategy</p>
+        </div>
+      </div>
+
+      <div class="sec-content">
+        <div class="sec-wrapper">
+          <div class="write-up">
+            <h2>Bridging the Education Divide in Humanitarian</h2>
+            <br /><br />
+            <p>
+              Settings Millions of children across Africa remain excluded from
+              quality education due to conflict, displacement, poverty, and
+              systemic inequality. The lack of inclusive, context-responsive
+              learning opportunities continues to widen the educational gap for
+              the most marginalized.
+              <br /><br />We are reshaping the future of learning in
+              crisis-affected regions by deploying innovative, tech-driven
+              educational solutions that prioritize accessibility, adaptability,
+              and equity. Our interventions are designed to meet the urgent
+              needs of displaced learners, children with disabilities,
+              out-of-school youth, and other underserved groups. <br /><br />
+              Through collaborative partnerships, evidence-based strategies, and
+              grassroots engagement, we are advancing inclusive education in
+              line with global development goals. Our efforts contribute
+              directly to
+              <strong
+                >SDG 4 (Quality Education) and SDG 8 (Decent Work and Economic
+                Growth)
+              </strong>
+              , empowering communities and fostering resilience in the face of
+              adversity. <br /><br />
+              <em
+                >Together, we are building a future where every child learns —
+                no matter their circumstance.</em
+              >
+            </p>
+          </div>
+          <div class="little-child"></div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

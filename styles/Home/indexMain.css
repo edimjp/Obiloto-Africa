@@ -1,0 +1,121 @@
+div.childrenPic {
+  background-image: url("../../Images/children_pics/africa-6289451_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  color: var(--gray);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+  margin-bottom: 7rem;
+}
+
+div.childrenPic::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.hero-text {
+  position: absolute;
+  color: var(--white);
+  top: 40%;
+  max-width: 56rem;
+}
+
+div.hero-text h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  transform: translateX(-30%);
+  opacity: 0;
+  animation: slidedown 1s ease-in forwards;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+div.hero-text p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  transform: translateX(-30%);
+  opacity: 0;
+  animation: slideIn 0.7s ease-in forwards;
+  animation-delay: 1s;
+}
+
+div.hero-text p.unesco {
+  font-style: italic;
+  color: var(--orange);
+  text-align: left;
+  margin-left: 3rem;
+  font-weight: 700;
+  transform: translateX(-30%);
+  opacity: 0;
+  animation: slideIn 0.5s ease-in forwards;
+  animation-delay: 1.7s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+div.sec-content {
+  display: flex;
+  justify-content: center;
+}
+
+div.sec-wrapper {
+  max-width: 85%;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+div.write-up {
+  flex: 1;
+}
+
+div.write-up h2 {
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+div.write-up p {
+  font-size: 1.2rem;
+  /* color: var(--gray); */
+}
+
+div.little-child {
+  flex: 1;
+  background-image: url("../../Images/children_pics/children-7527411_1920.jpg");
+  height: 40rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  object-fit: cover;
+}
