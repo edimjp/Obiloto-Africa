@@ -12,7 +12,8 @@ nav {
 
 nav.nav-himself {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.1);
-  background-color: rgba(235, 156, 9, 0.692);
+  background-color: rgba(0, 128, 0, 0.623);
+  z-index: 20;
 }
 
 div.nav-wrapper {
@@ -28,13 +29,19 @@ div.nav-links {
   display: flex;
   margin-left: auto;
   align-items: center;
+}
+
+div.nav-links ul {
+  display: flex;
+  list-style: none;
   gap: 1rem;
   font-size: 1.1rem;
+  align-items: center;
 }
 
 div.nav-links a {
   text-decoration: none;
-  color: var(--orange);
+  color: var(--lightgreen);
   border-radius: 0.5rem;
   padding: 0.5rem 0.7rem;
   font-weight: 700;
@@ -46,12 +53,16 @@ div.nav-links a.gray {
 }
 
 div.nav-links a:hover {
-  color: var(--black);
+  color: var(--gray);
   transform: translateY(0.4rem);
 }
 
+/* div.nav-links a.home {
+  background-color: rgba(53, 53, 53, 0.733);
+} */
+
 div.nav-links a.home {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(37, 37, 37, 0.61);
 }
 
 svg.more-links path {

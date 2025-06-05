@@ -4,6 +4,8 @@
   --gray: rgb(200, 200, 200);
   --white: #fff;
   --lightGray: #ecf0f1;
-  --darkgreen: #1e8449;
+  --textGray: rgba(0, 0, 0, 0.54);
+  --lightgreen: #3cca77;
+  --darkgreen: #368f5b;
   --font-euclid: "__euclid_86150b", "__euclid_Fallback_86150b";
 }

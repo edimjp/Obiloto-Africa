@@ -1,3 +1,7 @@
+main {
+  margin-bottom: 7rem;
+}
+
 div.childrenPic {
   background-image: url("../../Images/children_pics/africa-6289451_1920.jpg");
   background-size: cover;
@@ -60,7 +64,7 @@ div.hero-text p {
 
 div.hero-text p.unesco {
   font-style: italic;
-  color: var(--orange);
+  color: var(--lightgreen);
   text-align: left;
   margin-left: 3rem;
   font-weight: 700;
@@ -85,6 +89,7 @@ div.hero-text p.unesco {
 div.sec-content {
   display: flex;
   justify-content: center;
+  margin-bottom: 7rem;
 }
 
 div.sec-wrapper {
@@ -100,12 +105,18 @@ div.write-up {
 
 div.write-up h2 {
   font-size: 2rem;
-  color: var(--orange);
+  color: var(--black);
 }
 
 div.write-up p {
   font-size: 1.2rem;
-  /* color: var(--gray); */
+  color: var(--textGray);
+}
+
+div.write-up p.tgt {
+  color: var(--black);
+  font-style: italic;
+  font-weight: 700;
 }
 
 div.little-child {
@@ -118,4 +129,137 @@ div.little-child {
   background-position: center;
   border-radius: 1rem;
   object-fit: cover;
+}
+
+div.parent-whyOBM {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+div.whyOBM {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 70rem;
+}
+
+div.whyOBM h2 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+div.whyOBM p {
+  font-size: 1.1rem;
+  color: var(--textGray);
+}
+
+div.whyOBM p.quote {
+  text-align: justify;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--black);
+}
+
+div.vision-pic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5rem;
+}
+
+div.fpic {
+  background-image: url("../../Images/children_pics/raw\ image\ children\ photo.jpg");
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+div.fpic::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+div.vision-texts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+div.vision-texts h2 {
+  font-size: 2rem;
+  color: var(--lightgreen);
+  margin-bottom: 0.7rem;
+  width: fit-content;
+  background-color: rgba(26, 32, 44, 0.7);
+  padding: 0.4rem 0.7rem;
+}
+
+div.vision-texts p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  max-width: 30rem;
+}
+
+div.sec-pic {
+  background-image: url("../../Images/children_pics/rawpixel\ children\ image.jpg");
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+div.sec-pic::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 166, 0, 0.466);
+}
+
+div.com-texts {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.com-texts h2 {
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 0.7rem;
+  background-color: #ffa600a9;
+  width: fit-content;
+  padding: 0.4rem 0.7rem;
+}
+
+div.com-texts p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  max-width: 30rem;
+  color: rgb(255, 255, 255);
 }
