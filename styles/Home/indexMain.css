@@ -76,7 +76,7 @@ div.hero-text p.unesco {
 
 @keyframes slideIn {
   0% {
-    transform: translateX(-30%);
+    transform: translateX(-10%);
     opacity: 0;
   }
 
@@ -111,6 +111,7 @@ div.write-up h2 {
 div.write-up p {
   font-size: 1.2rem;
   color: var(--textGray);
+  text-align: justify;
 }
 
 div.write-up p.tgt {
@@ -128,7 +129,6 @@ div.little-child {
   background-size: cover;
   background-position: center;
   border-radius: 1rem;
-  object-fit: cover;
 }
 
 div.parent-whyOBM {

@@ -23,6 +23,7 @@ div.nav-wrapper {
 
 a.obt-logo img {
   height: 15rem;
+  width: auto;
 }
 
 div.nav-links {
@@ -53,13 +54,9 @@ div.nav-links a.gray {
 }
 
 div.nav-links a:hover {
-  color: var(--gray);
+  color: var(--black);
   transform: translateY(0.4rem);
 }
-
-/* div.nav-links a.home {
-  background-color: rgba(53, 53, 53, 0.733);
-} */
 
 div.nav-links a.home {
   background-color: rgba(37, 37, 37, 0.61);

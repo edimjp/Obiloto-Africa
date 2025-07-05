@@ -1,0 +1,87 @@
+footer {
+  height: 30rem;
+  width: 100%;
+  background-color: rgb(52, 164, 78);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  color: var(--lightGray);
+  padding-top: 2rem;
+}
+
+footer h2 {
+  color: var(--white);
+}
+
+footer div.ff-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div.sup-ymte {
+  max-width: 18rem;
+}
+
+footer div.sup-ymte h2 {
+  margin-bottom: 1rem;
+}
+
+footer div.q-links h2 {
+  margin-bottom: 2.5rem;
+}
+
+footer div.q-links ul {
+  list-style: none;
+}
+
+footer div.q-links ul li {
+  margin: 0.7rem 0;
+}
+
+footer div.q-links ul a {
+  text-decoration: none;
+  color: var(--lightGray);
+  transition: color ease 0.3s;
+}
+
+footer div.q-links ul a:hover {
+  color: var(--black);
+}
+
+footer div.fs-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div.conn-ws h2 {
+  margin-bottom: 1rem;
+}
+
+footer div.conn-ws ul {
+  list-style: none;
+}
+
+footer div.conn-ws ul li {
+  margin: 0.7rem;
+}
+
+footer div.conn-ws ul a {
+  text-decoration: none;
+  color: var(--lightGray);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+footer div.conn-ws ul svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+footer div.address h2 {
+  margin-bottom: 1rem;
+}
+
+footer div.address p {
+  max-width: 18rem;
+}
