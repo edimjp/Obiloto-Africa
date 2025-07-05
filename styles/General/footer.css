@@ -1,12 +1,15 @@
 footer {
-  height: 30rem;
-  width: 100%;
+  /* height: 30rem; */
   background-color: rgb(52, 164, 78);
+  width: 100%;
+  padding-top: 2rem;
+  color: var(--lightGray);
+}
+
+footer div.fc-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10rem;
-  color: var(--lightGray);
-  padding-top: 2rem;
+  /* column-gap: 10rem; */
 }
 
 footer h2 {
@@ -24,6 +27,10 @@ footer div.sup-ymte {
 
 footer div.sup-ymte h2 {
   margin-bottom: 1rem;
+}
+
+footer div.sup-ymte p {
+  text-align: justify;
 }
 
 footer div.q-links h2 {
@@ -54,7 +61,7 @@ footer div.fs-child {
 }
 
 footer div.conn-ws h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 footer div.conn-ws ul {
@@ -62,7 +69,7 @@ footer div.conn-ws ul {
 }
 
 footer div.conn-ws ul li {
-  margin: 0.7rem;
+  margin-bottom: 1.5rem;
 }
 
 footer div.conn-ws ul a {
@@ -71,6 +78,24 @@ footer div.conn-ws ul a {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+}
+
+footer div.conn-ws svg path {
+  fill: var(--white);
+  transition: all ease 0.3s;
+}
+
+footer div.conn-ws ul a span {
+  color: var(--lightGray);
+  transition: all ease 0.3s;
+}
+
+footer div.conn-ws ul a:hover svg path {
+  fill: var(--black);
+}
+
+footer div.conn-ws ul a:hover span {
+  color: var(--black);
 }
 
 footer div.conn-ws ul svg {
@@ -84,4 +109,29 @@ footer div.address h2 {
 
 footer div.address p {
   max-width: 18rem;
+}
+
+footer div.address h2 {
+  margin-bottom: 2rem;
+}
+
+footer div.copyright {
+  margin-top: 4rem;
+  border-top: solid var(--lightGray) 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div.copyright div {
+  padding: 1rem 0;
+}
+
+footer div.copyright p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer p.c-right {
+  margin: 0.4rem 0;
 }
