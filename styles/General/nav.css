@@ -35,7 +35,7 @@ div.nav-links {
 div.nav-links ul {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: clamp(0.3rem, 0.8vw, 1rem);
   font-size: 1.1rem;
   align-items: center;
 }
@@ -44,7 +44,7 @@ div.nav-links a {
   text-decoration: none;
   color: var(--lightgreen);
   border-radius: 0.5rem;
-  padding: 0.5rem 0.7rem;
+  padding: 0.5rem clamp(0.3rem, 1vw, 0.7rem);
   font-weight: 700;
   transition: all 0.3s ease;
 }
@@ -62,15 +62,24 @@ div.nav-links a.home {
   background-color: rgba(37, 37, 37, 0.61);
 }
 
-svg.more-links path {
-  transition: stroke 0.3s ease;
+nav svg.hamburger-menu {
+  height: 2rem;
+  width: auto;
+  margin-left: auto;
+  margin-right: 1rem;
+  display: none;
 }
 
-div.dd-links:hover svg.more-links path {
-  stroke: var(--gray);
+nav svg.hamburger-menu path {
+  fill: var(--gray);
 }
 
-div.nav-links svg.more-links {
-  height: 1.5rem;
-  width: 1.5rem;
+@media (max-width: 1150px) {
+  div.nav-links {
+    display: none;
+  }
+
+  nav svg.hamburger-menu {
+    display: flex;
+  }
 }
