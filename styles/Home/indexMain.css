@@ -29,6 +29,7 @@ div.hero-text {
   color: var(--white);
   top: 40%;
   max-width: 56rem;
+  padding: 0 1rem;
 }
 
 div.hero-text h1 {
