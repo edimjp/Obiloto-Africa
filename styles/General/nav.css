@@ -139,19 +139,21 @@ aside ul li {
 aside ul a {
   text-decoration: none;
   color: var(--lightgreen);
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: 700;
   transition: all ease 0.3s;
+  display: inline-block; /* Required for transform to work */
+  transform-origin: left center; /* ✅ Add this line */
 }
 
 aside ul a:hover {
   color: var(--black);
-  transform: scale(1.3, 1.3);
+  transform: scale(1.1, 1.1);
 }
 
 aside div.as-footer {
   margin-top: auto;
-  padding: 2rem 0;
+  padding: 1.2rem 0;
   border-top: solid 1px var(--lightgreen);
   display: flex;
   justify-content: center;
@@ -160,6 +162,7 @@ aside div.as-footer {
 
 div.as-footer p {
   color: var(--lightgreen);
+  font-size: 0.6rem;
 }
 
 @media (max-width: 1150px) {
