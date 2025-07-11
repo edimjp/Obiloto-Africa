@@ -107,12 +107,12 @@ footer div.address h2 {
   margin-bottom: 1rem;
 }
 
-footer div.address p {
-  max-width: 18rem;
-}
-
 footer div.address h2 {
   margin-bottom: 2rem;
+}
+
+footer div.address p {
+  max-width: 18rem;
 }
 
 footer div.copyright {
@@ -134,4 +134,31 @@ footer div.copyright p {
 
 footer p.c-right {
   margin: 0.4rem 0;
+}
+
+@media (max-width: 950px) {
+  footer div.fc-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* footer div.fs-child {
+    justify-content: space-between;
+    margin-left: 7rem;
+  } */
+
+  footer div.address p {
+    max-width: 12rem;
+  }
+}
+
+@media (max-width: 500px) {
+  footer div.ff-child,
+  footer div.fs-child {
+    flex-direction: column;
+    row-gap: 2rem;
+    margin: 0 1.5rem 0 1.5rem;
+  }
 }
