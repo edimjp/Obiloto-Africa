@@ -80,7 +80,7 @@ nav svg.hamburger-menu:hover {
   transform: scale(1.1, 1.1);
 }
 
-nav aside {
+/* nav aside {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -142,8 +142,8 @@ aside ul a {
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: 700;
   transition: all ease 0.3s;
-  display: inline-block; /* Required for transform to work */
-  transform-origin: left center; /* ✅ Add this line */
+  display: inline-block; /* Required for transform to work 
+  transform-origin: left center; /* ✅ Add this line 
 }
 
 aside ul a:hover {
@@ -163,7 +163,7 @@ aside div.as-footer {
 div.as-footer p {
   color: var(--lightgreen);
   font-size: 0.6rem;
-}
+} */
 
 @media (max-width: 1150px) {
   div.nav-links {

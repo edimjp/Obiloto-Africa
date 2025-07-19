@@ -1,0 +1,84 @@
+aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 70vw;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100vw);
+  transition: all ease 0.5s;
+}
+
+aside div.over-lay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+aside div.as-logo {
+  display: flex;
+  align-items: center;
+}
+
+aside div.as-logo img {
+  height: 7rem;
+}
+
+aside div.as-logo svg {
+  height: 1.5rem;
+  margin: 0 1rem 0 auto;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+div.as-logo svg g {
+  fill: var(--lightgreen);
+}
+
+aside div.as-logo svg:hover {
+  transform: scale(1.15, 1.15);
+}
+
+aside ul {
+  margin-left: 2.5rem;
+  margin-top: 3rem;
+  list-style: none;
+}
+
+aside ul li {
+  margin-bottom: 1rem;
+}
+
+aside ul a {
+  text-decoration: none;
+  color: var(--lightgreen);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 700;
+  transition: all ease 0.3s;
+  display: inline-block; /* Required for transform to work */
+  transform-origin: left center; /* ✅ Add this line */
+}
+
+aside ul a:hover {
+  color: var(--black);
+  transform: scale(1.1, 1.1);
+}
+
+aside div.as-footer {
+  margin-top: auto;
+  padding: 1.2rem 0;
+  border-top: solid 1px var(--lightgreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.as-footer p {
+  color: var(--lightgreen);
+  font-size: 0.6rem;
+}
